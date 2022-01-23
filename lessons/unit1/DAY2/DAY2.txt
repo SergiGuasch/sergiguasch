@@ -1,0 +1,11 @@
+panda 
+
+designed to work for 2 dimensions: rows and columns 
+
+
+DATA FRAME - DF:
+row have axis position of 0
+column have axis position of 1
+
+import panda as pd
+
