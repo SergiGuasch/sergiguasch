@@ -1,0 +1,7 @@
+If its not linear, the regression model doesn't makes more sense. EVerything we know on the x axis must rise on the y axis
+
+To improve the model
+try different scalers... minmax scaler for the date and also for the numerical values
+explore
+
+candidate model 
