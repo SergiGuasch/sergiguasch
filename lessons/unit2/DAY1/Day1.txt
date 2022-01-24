@@ -5,3 +5,10 @@ try different scalers... minmax scaler for the date and also for the numerical v
 explore
 
 candidate model 
+
+
+if my data is an array, how to turn it back into a pandas dataframe?
+you use pd.DataFrame - after some scaling and encoding methods your data will become an array - this is normal - you would turn it back into a dataframe to plot it or to concat with another data frame
+eg if X_encoded=encoder.transform(X_cat).toarray() creates an array then X_encoded_df=pd.DataFrame(encoder.transform(X_cat).toarray())       note that get_dummies is the pandas way of equivalent encoding, so your data will stay as a data frame
+and if scaled_X_num=scaled.transform(X_num) creates an array then scaled_X_num_df=pd.DataFrame(scaled_X_num) creates a dataframe - plus you can bring the column headers back in by defining the column attribute of the pd.DataFrame function eg. scaled_X_num_df_headers=pd.DataFrame(scaled_X_num,columns=X_num.columns)
+one more tip… if both your categories and numbers are arrays, you can concatenate using np.concatenate instead of pd.concat - your linear model will accept numpy arrays or pandas data frames
