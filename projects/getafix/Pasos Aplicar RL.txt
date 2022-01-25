@@ -1,0 +1,51 @@
+1.Import
+2.Merge
+3.Review
+4.Clean
+	4.1Data all
+		drop dupes
+		deal with nulls	
+			drop
+			fill
+		drop outliers (depending the data, not always drop here)
+		standarise
+			headers
+			values
+		dtypes set
+		drop whole columns
+5.EDA - Explorating data analysis
+	hist() - joinplot - scatter - box 
+	correlation	
+		multicorrelating
+		relations to the target var
+---------------------
+after visualisations we can return to clean more things
+6.Definey
+	drop y from X
+7.Split X
+	num
+	cat
+8.Pre-processing - Candidate 1
+	enconde cat for LR
+		order()
+		getdummies()
+		ohe()
+	scaling - only for numerical var
+		transformating
+		minmax
+		stand()
+		log()
+		robust - usefull with outliers
+9.Merge num+cat back together
+	X.shape and y.shape tienen q ser iguales, si necesitamos borrar algo siempre sera para toda la data base
+	antes del punto 6
+10.Model 
+	import model + metrics
+	X_train - for teaching model
+	fit() model to train
+	test model again test data to do predictions
+11.Evaluate - normally for LR we use 
+	R2 - MSE - RMSE - MAE
+	What does is mean
+12.Pre-processing - Candidate model 2
+	Repeat (steps 8 to 11)
