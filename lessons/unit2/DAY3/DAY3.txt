@@ -1,0 +1,9 @@
+CASE [Position]
+WHEN CONTAINS([Position],'Science') THEN 'scientist roles'
+WHEN STARTSWITH ([Position],'Data Analyst') THEN 'data analysts'
+ELSE 'unknown'
+END
+
+IFNULL()
+ISNULL()
+ZN()
