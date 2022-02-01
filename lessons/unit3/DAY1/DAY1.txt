@@ -1,0 +1,13 @@
+FREQUENCY
+Percentile 25% or 20% Calculation If/Else
+
+MONETARY
+Percentile 25% or 20% Calculation If/Else
+
+RECENCY- Based on time so its the oppossite
+Percentile 25% or 20% Calculation If/Else
+
+RFM
+
+WHALES---555
+LAPSED GOOD CUSTOMERS---1*5
