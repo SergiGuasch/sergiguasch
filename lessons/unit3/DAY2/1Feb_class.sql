@@ -261,7 +261,7 @@ END as status_description
 FROM loan
 WHERE amount is not null ;
 
-CREATE View loan_statuses as
+CREATE OR REPLACE View  loan_statuses as
 SELECT loan_id, account_id, 
 CASE
 when status = 'A' then 'good-finished'
