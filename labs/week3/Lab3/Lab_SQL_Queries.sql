@@ -19,8 +19,7 @@ order by number_films desc;
 
 # 4. Which kind of movies (rating) have a mean duration of more than two hours?
 
-select *, avg(rating) as avg_films 
+select *, avg(length) as avg_films 
 from film
 group by rating
-having avg(length) > 120
-order by avg_films desc;
+having avg(length) > 120;
