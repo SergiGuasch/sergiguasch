@@ -23,3 +23,14 @@ select *, avg(length) as avg_films
 from film
 group by rating
 having avg(length) > 120;
+
+
+-- 3.04 - Activity 1
+-- https://github.com/SergiGuasch/sergiguasch/blob/main/lessons/unit3/DAY3/EDR_Sakila.mwb
+
+-- 3.04 - Activity 2
+-- From the following columns, determine if they can be Primary key PK or not.
+
+-- Product_id - Yes, just in case it is a unique id and not a foreign key.
+-- Phone number - Yes
+-- First name - No
