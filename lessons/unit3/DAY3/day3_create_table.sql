@@ -19,14 +19,38 @@ CREATE TABLE books
 author_id INT,
 book_name VARCHAR(50),
 category VARCHAR(20),
-PRIMARY KEY (book_id)
+PRIMARY KEY (book_id),
+KEY idx_fk_author(author_id),
+CONSTRAINT fk_author_id FOREIGN KEY(author_id)
+REFERENCES authors(author_id) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 INSERT INTO authors(name, country)
 VALUES('Miguel de Cervantes', 'Spain'), ('Charles Dickens', 'Uk'), ('JRR Tolkien', 'South Africa'), 
 ('Antoine de Saint-Exupéry', 'France'), ('JRR Tolkien', 'South Africa');
 
-select*from authors;
+INSERT INTO books(author_id, book_name, category)
+VALUES (1,'El quixot','novel'), (2,'Una història de dues ciutats','fiction'), (3,'El senyor dels Anells','fantasy'), 
+(4,'El petit príncep','fantasy'), (5,'El Hobbit','fantasy');
+
+select*from books;
+
+#update
+-- update books set book_name = 'Una història de dues ciutats'
+-- where book_id = 2;
+
+SELECT category, count(book_name)
+FROM books 
+JOIN authors
+using(author_id)
+group by category;
+
+
+CREATE or REPLACE VIEW authorsandbooks AS
+select * from books join authors using(author_id);
+
+select * from authorsandbooks;
+
 
 # continuing to quey a single table
 
