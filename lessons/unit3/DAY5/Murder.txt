@@ -1,0 +1,10 @@
+https://mystery.knightlab.com/#experienced
+
+-- select * from crime_scene_report where type = 'murder' AND date=20180115 AND city = 'SQL City';
+-- select * from person where address_street_name LIKE 'Northwester%' order by address_number desc Limit 1;
+-- select * from person where address_street_name LIKE 'Franklin Ave' and name LIKE '%Annabel%';
+-- select * from interview where person_id IN (14887,16371);
+select * from get_fit_now_member as gm
+join get_fit_now_check_in as gc
+on gm.id = gc.membership_id
+where gc.membership_id LIKE '%48Z%' AND gc.check_in_date = 20180109;
