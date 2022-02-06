@@ -1,0 +1,15 @@
+3.04 - Activity 2
+From the following columns, determine if they can be Primary key PK or not.
+
+Product_id - Yes, just in case it is a unique id and not a foreign key.
+Phone number - Yes
+First name - No
+
+3.04 - Activity 4
+select A3 as district_name, c.client_id, account_id from bank.disp as d
+join bank.client as c
+on d.client_id = c.client_id
+join bank.district as da
+on da.A1 = c.district_id
+where type = 'OWNER'
+order by A3 desc;
