@@ -12,13 +12,26 @@ by [Sergi Guasch](https://github.com/SergiGuasch/sergiguasch), [Agustin Carecele
 -*Introduction*  
 -*Methods applied*  
 -*Results and analysis*  
--*Conclusion*  
+-*Conclusions*  
 
 ### Introduction
 
 ![2](https://github.com/SergiGuasch/sergiguasch/blob/main/projects/getafix/2.png)
 
-### Methods applied
+### Steps and methods applied
+
+Next, we list the different steps we've been using from the database til this representation as plots, maps or pie charts:
+
+1. Importing data *pd.read_csv()*
+2. Review data *.info() .describe() .shape*
+3. Remove Duplicates *.drop_duplicates()*
+4. All categorical database changed to lowercase to facilitate the queries *.str.lower()*
+5. Deal with nulls *.median() .fillna()*
+6. Preparing data / Exporting data *.to_csv()*    
+                  - Working in location column  *.str.contains()*  
+                  - Working in position column  *.drop()*  
+                  - Working in description column  *regex library*    
+7. Tableau working with pie/charts, plots and a map (using the column *country* to get longitud/latitude)
 
 
 
@@ -43,7 +56,7 @@ Down in the center it shows the number of jobs positions by city, where it highl
 
 Finally, we can see down on the right a plot with the most demanded skills and tools, being the machine and deep learning the most demanded skill/tool. But we must bear in mind that machine learning is also considered as a job position as itself, so maybe its overestimated. On the other hand, Computing it very relevant as the second most demanded skill followed but skills as BI or Teamwork. With a significant less percentatge we can fin another skills or tools as Programming, Statistical skills, Python, Modelling or language.
 
-### Conclusion
+### Conclusions
 
 According to our research in the database, we determine that:  
 - To got hired, the job positions related to a specific field linked to data science, and the most demanded was Data Scientist with almost 64% followed by Machine Learning and Data Analyst (with almost 7% of the total).
