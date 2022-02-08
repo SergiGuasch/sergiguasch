@@ -16,9 +16,18 @@ by [Sergi Guasch](https://github.com/SergiGuasch/sergiguasch), [Agustin Carecele
 
 ### Introduction
 
-The next project has been developed from the database provided in the exercise. There were different options to get the information, by one hand it was possible to get the csv showing a combination   which it shows a huge list with five columns showing a diferent positions jobs, the company which is demanding the job position, a decription of the main skills and tools required to get the position, diferent reviews for the company, the location where is offered the job position. In the next image, appears a short abstract about the different columns that provide this dataset:
+The next project has been developed from the database provided in the exercise. There were different options to get the information from csv files. By one hand it was possible to get a csv showing a combination of all cities to explore the US market, and on the other hand it was provided a diferent csv files for each city in order to merge the information from the different files. In our case, we decided to get the information from the csv file of the all cities. This file it provides a huge list with five columns showing a diferent positions jobs, the company which is demanding the job position, a decription of the main skills and tools required to get the position, diferent reviews for the company and the location where is offered the job position.  
+<br/><br/>
+In the next image, appears a short abstract about the different columns that provide this dataset:
 
 ![2](https://github.com/SergiGuasch/sergiguasch/blob/main/projects/getafix/2.png)
+
+Bear in mind the database, we've been researching helped by the different tools provided by Python and Tableau.  
+
+The next project it will try to get answers about the information provided in the database and required in the excercise statement:  
+   - Who gets hired? What kind of talent do employers want when they are hiring a data scientist?  
+   - Which location has the most opportunities?  
+   - What skills, tools, degrees or majors do employers want the most for data scientists?  
 
 ### Steps and methods applied
 
