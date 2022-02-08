@@ -27,29 +27,29 @@ After join in the dashboard the map and each plot/pie chart we've been going thr
 
 ![Getafix_Dashboard](https://github.com/SergiGuasch/sergiguasch/blob/main/projects/getafix/Getafix_Dashboard.jpg)
 
-As we can see from the dashboard above, we have a map in the center where appears the most representative states showing the number of job positions and the name/code frome the state. Also we have set a color scale from the most number of jobs as darker blue, while the states with less jobs positions related to data science are painted in a lighter blue.
+As we can see from the dashboard above, we have a map in the center where appears the most representative states showing the number of job positions and the name/code frome the state. Also we have set a color scale from the most number of jobs as darker blue, till the states with less jobs positions related to data science which are painted in a lighter blue.
 
 On the other hand we can see a couple of pie charts that represents, by one hand the percentatge of top job positions and in the other hand the percentatge of the different kinds of degrees are required to get a job related in data science. 
 
 So the left pie, shows mainly that Data Science position is eminently the most required positions to develop the job related, but also, we can see, that Machine learning (considered not just a tool) it is the second main job required. On the third position we can find the Data Analyst, and in the last positions appears the Business Intelligence, and other kinds.
 
-In the right pie it shows how a Master degree is the most demanded degree to get a job related in Data Science, being more than a half of the total degrees. Following by close, the Bachelor it is the second most demanded degree, while PhD and others togetherrepresents less than the 10% of the total degrees.
+In the right pie it shows how a Master degree is the most demanded degree to get a job related in Data Science, being more than a half of the total degrees. Following by close the Bachelor, it is the second most demanded degree, while PhD and others togetherrepresents less than the 10% of the total degrees.
 
-Keep going with the plots, on the left down side of the dashboard appears the most demanded talents. Here we can see that mainly are experience and analytical talent as the most 
+Following the plots, on the left down side of the dashboard appears the most demanded talents. Here we can see that mainly are experience and analytical talent as the most 
 demanded, with around 70% of total. On the other hand, we can see how solutions, knowledge, management and responsabilities, are the remaining 30% and they are more or less equally distributed with the same percentage.
 
-Down in the center it shows the number of jobs positions by city, where it highlight are New York followed by San Francisco. This plot shows how the citys with the highest number of jobs positions are correlate the ones that are in the states that appears in the map above as the states with the most number of job positions.
+Down in the center it shows the number of jobs positions by city, where it highlight are New York followed by San Francisco. This plot shows how the citys with the highest number of jobs positions are located in the states that appears in the map above as the states with the most number of job positions.
 
-Finally, we can see down on the right a plot with the most demanded skills and tools, being the machine and deep learning the most demanded skill/tool. But we must bear in mind that machine learning is also considered as a job position as itself, so maybe its overestimated. On the other hand, Computing it very relevant as the second most demanded skill followed but skills as BI or Teamwork. A bit farther we can fin another skills or tools as Programming, Statistical skills, Python, Modelling or language.
+Finally, we can see down on the right a plot with the most demanded skills and tools, being the machine and deep learning the most demanded skill/tool. But we must bear in mind that machine learning is also considered as a job position as itself, so maybe its overestimated. On the other hand, Computing it very relevant as the second most demanded skill followed but skills as BI or Teamwork. With a significant less percentatge we can fin another skills or tools as Programming, Statistical skills, Python, Modelling or language.
 
 ### Conclusion
 
-According to our research in the database, these are the graphs we've created to answer the next questions:  
-- To determine who got hired, these are the job positions related to a specific field linked to data science, and the most demanded was Data Scientist with almost 64% followed by Machine Learning and Data Analyst (the orange portion with almost 7% of the total).
-- On the one hand, those positions demanded, by far, experience and analytical thinking.
+According to our research in the database, we determine that:  
+- To got hired, the job positions related to a specific field linked to data science, and the most demanded was Data Scientist with almost 64% followed by Machine Learning and Data Analyst (with almost 7% of the total).
+- On the one hand, the positions demanded, by far, are experience and analytical thinking.
 - However, on the other hand, machine and deep learning was the top skill demanded even if it is wasn't the top position while, for example, Python wasn't in the top 5.
-- About which location had the most opportunities, by far it was California followed by New York, where the big tech companies are located. Therefore, New York City and San Francisco are the cities with a greater number of jobs offered.
-- And finally, employers demanded candidates with master and Bachelor degrees as one of the requirements for its application.
+- On the other hand, the location with the most opportunities, by far it was the state of California followed by New York, where the big tech companies are located. Therefore, New York City and San Francisco are the cities with a greater number of jobs offered.
+- And finally, employers demanded candidates with master and Bachelor degrees as the most important requirements for its application.
 
 **Tools**
 
