@@ -4,7 +4,7 @@
 by [Sergi Guasch](https://github.com/SergiGuasch/sergiguasch), [Agustin Carecelen](https://github.com/AgustinCarcelen) and [Lluis Badia](https://github.com/lluis90badia) - February 2021
 <br/><br/>
 
-## Analyzing the diferent job positions are most demanded related to Data Science in US in 2018.
+## Analyzing the different job positions related to Data Science most in demand in the United States in 2018.
 
 ![GetafixIronhack](https://github.com/SergiGuasch/sergiguasch/blob/main/projects/getafix/GetafixIronhack.jpeg)
 
@@ -23,9 +23,11 @@ by [Sergi Guasch](https://github.com/SergiGuasch/sergiguasch), [Agustin Carecele
 
 ### Results and analysis
 
-After merge in the same dashboard all the different analysis we've been going through, we obtain the next image:
+After join in the dashboard the map and each plot/pie we've been going through during all the different analysis , we have obtained the next image:
 
 ![Getafix_Dashboard](https://github.com/SergiGuasch/sergiguasch/blob/main/projects/getafix/Getafix_Dashboard.jpg)
+
+As we can see from the dashboard above, we have a map in the center where the 
 
 
 ### Conclusion
