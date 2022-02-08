@@ -38,12 +38,18 @@ In the right pie it shows how a Master degree is the most demanded degree to get
 Keep going with the plots, on the left down side of the dashboard appears the most demanded talents. Here we can see that mainly are experience and analytical talent as the most 
 demanded, with around 70% of total. On the other hand, we can see how solutions, knowledge, management and responsabilities, are the remaining 30% and they are more or less equally distributed with the same percentage.
 
-DOwn in the center it shows the number of jobs positions by city, where it highlight are New York followed by San Francisco. This plot shows how the citys with the highest number of jobs positions are correlate the ones that are in the states that appears in the map above as the states with the most number of job positions.
+Down in the center it shows the number of jobs positions by city, where it highlight are New York followed by San Francisco. This plot shows how the citys with the highest number of jobs positions are correlate the ones that are in the states that appears in the map above as the states with the most number of job positions.
 
 Finally, we can see down on the right a plot with the most demanded skills and tools, being the machine and deep learning the most demanded skill/tool. But we must bear in mind that machine learning is also considered as a job position as itself, so maybe its overestimated. On the other hand, Computing it very relevant as the second most demanded skill followed but skills as BI or Teamwork. A bit farther we can fin another skills or tools as Programming, Statistical skills, Python, Modelling or language.
 
 ### Conclusion
 
+According to our research in the database, these are the graphs we've created to answer the next questions:  
+- To determine who got hired, these are the job positions related to a specific field linked to data science, and the most demanded was Data Scientist with almost 64% followed by Machine Learning and Data Analyst (the orange portion with almost 7% of the total).
+- On the one hand, those positions demanded, by far, experience and analytical thinking.
+- However, on the other hand, machine and deep learning was the top skill demanded even if it is wasn't the top position while, for example, Python wasn't in the top 5.
+- About which location had the most opportunities, by far it was California followed by New York, where the big tech companies are located. Therefore, New York City and San Francisco are the cities with a greater number of jobs offered.
+- And finally, employers demanded candidates with master and Bachelor degrees as one of the requirements for its application.
 
 **Tools**
 
