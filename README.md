@@ -21,6 +21,7 @@ by [Sergi Guasch](https://github.com/SergiGuasch/sergiguasch), [Agustin Carecele
 ### Methods applied
 
 
+
 ### Results and analysis
 
 After join in the dashboard the map and each plot/pie chart we've been going through during all the different analysis , we have obtained the next image:
