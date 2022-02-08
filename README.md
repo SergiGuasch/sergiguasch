@@ -10,11 +10,13 @@ by [Sergi Guasch](https://github.com/SergiGuasch/sergiguasch), [Agustin Carecele
 
 ### Index
 -*Introduction*  
--*Methods applied*  
+-*Steps and methods applied*  
 -*Results and analysis*  
 -*Conclusions*  
 
 ### Introduction
+
+The next project has been developed from the database provided in the exercise. There were different options to get the information, by one hand it was possible to get the csv showing a combination   which it shows a huge list with five columns showing a diferent positions jobs, the company which is demanding the job position, a decription of the main skills and tools required to get the position, diferent reviews for the company, the location where is offered the job position. In the next image, appears a short abstract about the different columns that provide this dataset:
 
 ![2](https://github.com/SergiGuasch/sergiguasch/blob/main/projects/getafix/2.png)
 
