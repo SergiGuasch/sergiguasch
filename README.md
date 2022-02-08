@@ -20,9 +20,7 @@ The next project has been developed from the database provided in the exercise. 
 <br/><br/>
 In the next image, appears a short abstract about the different columns that provide this dataset:
 
-![2](https://github.com/SergiGuasch/sergiguasch/blob/main/projects/getafix/2.png)
-
-Bear in mind the database, we've been researching helped by the different tools provided by Python and Tableau.  
+![2](https://github.com/SergiGuasch/sergiguasch/blob/main/projects/getafix/2.png) 
 
 The next project it will try to get answers about the information provided in the database and required in the excercise statement:  
    - Who gets hired? What kind of talent do employers want when they are hiring a data scientist?  
@@ -31,7 +29,7 @@ The next project it will try to get answers about the information provided in th
 
 ### Steps and methods applied
 
-Next, we list the different steps we've been using from the database til this representation as plots, maps or pie charts:
+Bear in mind, we've been researching in the the database, helped by the different tools provided by Python and Tableau. Next, we list the different steps we've been using from the database til the different representations of plots, map or pie charts:
 
 1. Importing data *pd.read_csv()*
 2. Review data *.info() .describe() .shape*
