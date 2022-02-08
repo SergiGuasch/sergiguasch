@@ -38,6 +38,10 @@ In the right pie it shows how a Master degree is the most demanded degree to get
 Keep going with the plots, on the left down side of the dashboard appears the most demanded talents. Here we can see that mainly are experience and analytical talent as the most 
 demanded, with around 70% of total. On the other hand, we can see how solutions, knowledge, management and responsabilities, are the remaining 30% and they are more or less equally distributed with the same percentage.
 
+DOwn in the center it shows the number of jobs positions by city, where it highlight are New York followed by San Francisco. This plot shows how the citys with the highest number of jobs positions are correlate the ones that are in the states that appears in the map above as the states with the most number of job positions.
+
+Finally, we can see down on the right a plot with the most demanded skills and tools, being the machine and deep learning the most demanded skill/tool. But we must bear in mind that machine learning is also considered as a job position as itself, so maybe its overestimated. On the other hand, Computing it very relevant as the second most demanded skill followed but skills as BI or Teamwork. A bit farther we can fin another skills or tools as Programming, Statistical skills, Python, Modelling or language.
+
 ### Conclusion
 
 
