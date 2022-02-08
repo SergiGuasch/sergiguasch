@@ -1,9 +1,16 @@
-### Hi there 👋
+# Ironhack Project - GETAFIX 
+## US Data Science hires in 2018
 
-<!--
-**SergiGuasch/sergiguasch** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+by [Sergi Alvarez Guasch](https://github.com/SergiGuasch/sergiguasch), February 2021
+<br/><br/>
 
-Here are some ideas to get you started:
+## Analyzing the diferent job positions are most demanded related to Data Science in US in 2018.
+<br/><br/>
 
-- 🔭 I’m currently working on Data Analysis
--->
+### Index
+
+
+
+
+
+
