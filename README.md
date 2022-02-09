@@ -47,14 +47,19 @@ Following the metodology, it has been extracted the different independent variab
 - X_full= pd.DataFrame(scaler.transform(X_num),columns=X_num.columns) -- *finally we can asign to a new variable, the dataframe with the scaled variable X_num using the transform method.*  
 
 ### 5. Build the logistic regression model  
-To build the logistic model it has been used the next equation:   
+To build the logistic model it has been used the next equation, the train test split:   
 
 X_train,X_test,y_train,y_test=train_test_split(X_full,y,test_size=0.45,random_state=40)
 
 X_full and y are the independent and dependent variables respectively, which are the variable obtained in the last steps. Also, in the equation it has been assigned a random_state of 40 and a test_size of =.45, which are the standard values used to do the logistic regression model.  
 
 ### 6. Evaluate the model  
+To evaluate the model, first of all we are going to check the accuracy score of the result of the train test split. SO the mtodology to get this accuracy value is shown here:  
 
+- classification= LogisticRegression(max_iter=500) -- *here we use the LogisticRegression method/model which is going to iterate multiple times, and we assign the result to the classification variable *   
+- classification.fit(X_train,y_train) -- *now the variable is fitted in the X_train,y_train variables that have been got it during the train test split.
+- y_test_pred=classification.predict(X_test) -- *the next step is use through the predict() method applied to the independent variable text X_test (which it has been got it during the train test split). The result is going to be the predicted y_test*
+- accuracy_score(y_test,y_test_pred) -- *finally using the accuracy_score() between the y_test obtained during the train test split equation, and the y_test predicted before, we can get an score number.*
 
 **Tools**
  - *Code:* Jupyter Notebook - [Link to code folder](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Lab%20Imbalanced%20data.ipynb)
