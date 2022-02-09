@@ -21,68 +21,30 @@ by [Sergi Alvarez Guasch](https://github.com/SergiGuasch/sergiguasch)
 9. *Tomek links*    
 
 
-### 1. *Load the dataset and explore the variables* 
+### 1. Load the dataset and explore the variables 
 The first step it was to import the different libraries we are going to use to apply a logistic regression model. Then we can load to jupyter notebook as a dataframe with the next sintax: df=pd.read_csv('customer_churn.csv')  
  
 That's the result once imported:  
 
- 
-
 ![1](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/Load.jpg) 
 
-The next project it will try to get answers about the information provided in the database and required in the excercise statement:  
-   - Who gets hired? What kind of talent do employers want when they are hiring a data scientist?  
-   - Which location has the most opportunities?  
-   - What skills, tools, degrees or majors do employers want the most for data scientists?  
+Also, in this step it's the time to get more information about data with describe() and info() methods.
 
-### Steps and methods applied
+### 2. Select the variables tenure, SeniorCitizen, MonthlyCharges to predict the target variable Churn using a logistic regression
+Here it has been used the .loc[] method to select the diferent variables required to analyse with the logistic regression model, so in that case it has been needed 'tenure','SeniorCitizen','MonthlyCharges' and the target variable 'Churn'.  
+![2](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/Select.jpg)
 
-Bear in mind, we've been researching in the the database, helped by the different tools provided by Python and Tableau. Next, we list the different steps we've been using from the database til the different representations of plots, map or pie charts:
+### 3. Extract the target variable
+Next it has used to determine the dependent target variable (y), using the next sintaxis: y=df['Churn']
 
-1. Importing data *pd.read_csv()*
-2. Review data *.info() .describe() .shape*
-3. Remove Duplicates *.drop_duplicates()*
-4. All categorical database changed to lowercase to facilitate the queries *.str.lower()*
-5. Deal with nulls *.median() .fillna()*
-6. Preparing data / Exporting data *.to_csv()*    
-                  - Working in location column  *.str.contains()*  
-                  - Working in position column  *.drop()*  
-                  - Working in description column  *regex library*    
-7. Tableau working with pie/charts, plots and a map (using the column *country* to get longitud/latitude)
+### 4. Extract the independent variables and scale  
+Following the metodology, it has been extracted the different independent variables (x). For this purpose it has been used the next steps:  
 
-
-
-### Results and analysis
-
-After join in the dashboard the map and each plot/pie chart we've been going through during all the different analysis , we have obtained the next image:
-
-![Getafix_Dashboard](https://github.com/SergiGuasch/sergiguasch/blob/main/projects/getafix/Getafix_Dashboard.jpg)
-
-As we can see from the dashboard above, we have a map in the center where appears the most representative states showing the number of job positions and the name/code frome the state. Also we have set a color scale from the most number of jobs as darker blue, till the states with less jobs positions related to data science which are painted in a lighter blue.
-
-On the other hand we can see a couple of pie charts that represents, by one hand the percentatge of top job positions and in the other hand the percentatge of the different kinds of degrees are required to get a job related in data science. 
-
-So the left pie, shows mainly that Data Science position is eminently the most required positions to develop the job related, but also, we can see, that Machine learning (considered not just a tool) it is the second main job required. On the third position we can find the Data Analyst, and in the last positions appears the Business Intelligence, and other kinds.
-
-In the right pie it shows how a Master degree is the most demanded degree to get a job related in Data Science, being more than a half of the total degrees. Following by close the Bachelor, it is the second most demanded degree, while PhD and others togetherrepresents less than the 10% of the total degrees.
-
-Following the plots, on the left down side of the dashboard appears the most demanded talents. Here we can see that mainly are experience and analytical talent as the most 
-demanded, with around 70% of total. On the other hand, we can see how solutions, knowledge, management and responsabilities, are the remaining 30% and they are more or less equally distributed with the same percentage.
-
-Down in the center it shows the number of jobs positions by city, where it highlight are New York followed by San Francisco. This plot shows how the citys with the highest number of jobs positions are located in the states that appears in the map above as the states with the most number of job positions.
-
-Finally, we can see down on the right a plot with the most demanded skills and tools, being the machine and deep learning the most demanded skill/tool. But we must bear in mind that machine learning is also considered as a job position as itself, so maybe its overestimated. On the other hand, Computing it very relevant as the second most demanded skill followed but skills as BI or Teamwork. With a significant less percentatge we can fin another skills or tools as Programming, Statistical skills, Python, Modelling or language.
-
-### Conclusions
-
-According to our research in the database, we determine that:  
-- To got hired, the job positions related to a specific field linked to data science, and the most demanded was Data Scientist with almost 64% followed by Machine Learning and Data Analyst (with almost 7% of the total).
-- On the one hand, the positions demanded, by far, are experience and analytical thinking.
-- However, on the other hand, machine and deep learning was the top skill demanded even if it is wasn't the top position while, for example, Python wasn't in the top 5.
-- On the other hand, the location with the most opportunities, by far it was the state of California followed by New York, where the big tech companies are located. Therefore, New York City and San Francisco are the cities with a greater number of jobs offered.
-- And finally, employers demanded candidates with master and Bachelor degrees as the most important requirements for its application.
+X=df.drop('Churn',axis=1) -- here it's necessary to drop the dependent variable from the dataframe, in order to assign just the independent variables to x. 
+X_num=X.select_dtypes(include=np.number) -- here we use the columns from the df which are numerical and we asigned to the variable X_num.
+scaler= RobustScaler() -- we asign the method to scale 'RobustScaler' to the variable scaler.
+scaler.fit(X_num) -- the fit method permits using scaler to scale over the variable X_num
+X_full= pd.DataFrame(scaler.transform(X_num),columns=X_num.columns) -- finally once 
 
 **Tools**
-
- - *Visualitzations:* Tableau
- - *Code:* Jupyter Notebook - [Link to code folder](https://github.com/SergiGuasch/sergiguasch/blob/main/projects/getafix/Getafix_Presentation.ipynb)
+ - *Code:* Jupyter Notebook - [Link to code folder](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Lab%20Imbalanced%20data.ipynb)
