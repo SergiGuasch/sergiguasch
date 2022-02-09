@@ -40,11 +40,11 @@ Next it has used to determine the dependent target variable (y), using the next 
 ### 4. Extract the independent variables and scale  
 Following the metodology, it has been extracted the different independent variables (x). For this purpose it has been used the next steps:  
 
-X=df.drop('Churn',axis=1) -- *here it's necessary to drop the dependent variable from the dataframe, in order to assign just the independent variables to x.*   
-X_num=X.select_dtypes(include=np.number) -- *here we use the columns from the df which are numerical and we asigned to the variable X_num.*  
-scaler= RobustScaler() -- *we asign the method to scale 'RobustScaler' to the variable scaler.*  
-scaler.fit(X_num) -- *the fit method permits using scaler to scale over the variable X_num.*  
-X_full= pd.DataFrame(scaler.transform(X_num),columns=X_num.columns) -- *finally we can asign to a new variable, the dataframe with the scaled variable X_num using the transform method.*   
+- X=df.drop('Churn',axis=1) -- *here it's necessary to drop the dependent variable from the dataframe, in order to assign just the independent variables to x.*   
+- X_num=X.select_dtypes(include=np.number) -- *here we use the columns from the df which are numerical and we asigned to the variable X_num.*  
+- scaler= RobustScaler() -- *we asign the method to scale 'RobustScaler' to the variable scaler.*  
+- scaler.fit(X_num) -- *the fit method permits using scaler to scale over the variable X_num.*  
+- X_full= pd.DataFrame(scaler.transform(X_num),columns=X_num.columns) -- *finally we can asign to a new variable, the dataframe with the scaled variable X_num using the transform method.*   
 
 **Tools**
  - *Code:* Jupyter Notebook - [Link to code folder](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Lab%20Imbalanced%20data.ipynb)
