@@ -22,8 +22,10 @@ by [Sergi Alvarez Guasch](https://github.com/SergiGuasch/sergiguasch)
 
 
 ### 1. *Load the dataset and explore the variables* 
- The first step it was to import the different libraries we are going to use to apply a logistic regression model. Then we can load to jupyter notebook as a dataframe df=pd.read_csv('customer_churn.csv'):
+The first step it was to import the different libraries we are going to use to apply a logistic regression model. Then we can load to jupyter notebook as a dataframe with the next sintax: df=pd.read_csv('customer_churn.csv')  
  
+That's the result once imported:  
+
  
 
 ![2](https://github.com/SergiGuasch/sergiguasch/blob/main/projects/getafix/2.png) 
