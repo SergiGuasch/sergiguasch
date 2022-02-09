@@ -1,7 +1,6 @@
-![Ironhack](C:\Users\Sergi\OneDrive\Documents\GitHub\sergiguasch\labs\week4\Lab2\Ironhack.jpg)  
-<br/><br/>
+![Ironhack](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Ironhack.jpg)  
 
-# Ironhack Lab  
+# Unit 4 Lab 2 
 
 ## Imbalanced data
 
@@ -10,17 +9,22 @@ by [Sergi Alvarez Guasch](https://github.com/SergiGuasch/sergiguasch)
 ## Classification in order to predict the customer churn from a given dataframe.
 
 
-### Index
--*Introduction*  
--*Steps and methods applied*  
--*Results and analysis*  
--*Conclusions*  
+### Metodology
+1. *Load the dataset and explore the variables*    
+2. *Select the variables tenure, SeniorCitizen, MonthlyCharges to predict the target variable Churn using a logistic regression*    
+3. *Extract the target variable*   
+4. *Extract the independent variables and scale*    
+5. *Build the logistic regression model*    
+6. *Evaluate the model*    
+7. *Why in this dataset a simple model will give us more than 70% accuracy?*    
+8. *Synthetic Minority Oversampling TEchnique (SMOTE)*    
+9. *Tomek links*    
 
-### Introduction
 
-The next project has been developed from the database provided in the exercise. There were different options to get the information from csv files. By one hand it was possible to get a csv showing a combination of all cities to explore the US market, and on the other hand it was provided a diferent csv files for each city in order to merge the information from the different files. In our case, we decided to get the information from the csv file of the all cities. This file it provides a huge list with five columns showing a diferent positions jobs, the company which is demanding the job position, a decription of the main skills and tools required to get the position, diferent reviews for the company and the location where is offered the job position.  
-<br/><br/>
-In the next image, appears a short abstract about the different columns that provide this dataset:
+### 1. *Load the dataset and explore the variables* 
+ The first step it was to import the different libraries we are going to use to apply a logistic regression model. Then we can load to jupyter notebook as a dataframe df=pd.read_csv('customer_churn.csv'):
+ 
+ 
 
 ![2](https://github.com/SergiGuasch/sergiguasch/blob/main/projects/getafix/2.png) 
 
