@@ -1,4 +1,4 @@
-# Ironhack Lab - GETAFIX 
+# Ironhack Lab  
 ## Imbalanced data
 
 by [Sergi Alvarez Guasch](https://github.com/SergiGuasch/sergiguasch)
