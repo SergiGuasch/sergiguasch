@@ -1,7 +1,7 @@
 # Ironhack Lab - GETAFIX 
 ## Imbalanced data
 
-by [Sergi Guasch](https://github.com/SergiGuasch/sergiguasch)
+by [Sergi Alvarez Guasch](https://github.com/SergiGuasch/sergiguasch)
 
 ## Classification in order to predict the customer churn from a given dataframe.
 
