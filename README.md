@@ -56,8 +56,8 @@ X_full and y are the independent and dependent variables respectively, which are
 ### 6. Evaluate the model  
 To evaluate the model, first of all we are going to check the accuracy score of the result of the train test split. SO the mtodology to get this accuracy value is shown here:  
 
-- classification= LogisticRegression(max_iter=500) -- *here we use the LogisticRegression method/model which is going to iterate multiple times, and we assign the result to the classification variable *   
-- classification.fit(X_train,y_train) -- *now the variable is fitted in the X_train,y_train variables that have been got it during the train test split.
+- classification= LogisticRegression(max_iter=500) -- *here we use the LogisticRegression method/model which is going to iterate multiple times, and we assign the result to the classification variable*   
+- classification.fit(X_train,y_train) -- *now the variable is fitted in the X_train,y_train variables that have been got it during the train test split.*
 - y_test_pred=classification.predict(X_test) -- *the next step is use through the predict() method applied to the independent variable text X_test (which it has been got it during the train test split). The result is going to be the predicted y_test*
 - accuracy_score(y_test,y_test_pred) -- *finally using the accuracy_score() between the y_test obtained during the train test split equation, and the y_test predicted before, we can get an score number.*
 
