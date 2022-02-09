@@ -35,7 +35,8 @@ Here it has been used the .loc[] method to select the diferent variables require
 ![2](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/Select.jpg)
 
 ### 3. Extract the target variable
-Next it has used to determine the dependent target variable (y), using the next sintaxis: y=df['Churn']
+Next it has used to determine the dependent target variable (y), using the next sintaxis: y=df['Churn']  
+We can use this steps also to explore the dependent variable with .value_counts(). The result is that we have 5174 No and 1869 Yes. 
 
 ### 4. Extract the independent variables and scale  
 Following the metodology, it has been extracted the different independent variables (x). For this purpose it has been used the next steps:  
