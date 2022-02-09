@@ -4,7 +4,10 @@
 
 ## Imbalanced data
 
-by [Sergi Alvarez Guasch](https://github.com/SergiGuasch/sergiguasch)
+by [Sergi Alvarez Guasch](https://github.com/SergiGuasch/sergiguasch)  
+
+
+ - **Code:** Jupyter Notebook - [Link to code folder](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Lab%20Imbalanced%20data.ipynb)
 
 ## Classification in order to predict the customer churn from a given dataframe.
 
@@ -93,5 +96,3 @@ Here are the steps to visualize the ROC Curve:
 
 ### Tomek links  
 
-**Tools**
- - *Code:* Jupyter Notebook - [Link to code folder](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Lab%20Imbalanced%20data.ipynb)
