@@ -60,7 +60,32 @@ To evaluate the model, first of all we are going to check the accuracy score of 
 - classification= LogisticRegression(max_iter=500) -- *here we use the LogisticRegression method/model which is going to iterate multiple times, and we assign the result to the classification variable*   
 - classification.fit(X_train,y_train) -- *now the variable is fitted in the X_train,y_train variables that have been got it during the train test split.*
 - y_test_pred=classification.predict(X_test) -- *the next step is use through the predict() method applied to the independent variable text X_test (which it has been got it during the train test split). The result is going to be the predicted y_test*
-- accuracy_score(y_test,y_test_pred) -- *finally using the accuracy_score() between the y_test obtained during the train test split equation, and the y_test predicted before, we can get an score number.*
+- accuracy_score(y_test,y_test_pred) -- *finally using the accuracy_score() between the y_test obtained during the train test split equation, and the y_test predicted before, we can get an score number.*  
+
+Another step to visualize the model is using a confusion matrix. This matrix is useful in order to........  
+To get the confusion matrix its necessary to follow the next steps: 
+
+- from sklearn.metrics import confusion_matrix, plot_confusion_matrix -- *here its the code to import the confusion matrix algorithms from the sklearn.metrics library.*
+- confusion_matrix(y_test,y_test_pred) -- *the confusion matrix method is applied to the the y_test obtained during the train test split equation, and the y_test predicted in the last steps about the classification. So we are using the same variables than in accuracy_score method*
+- plot_confusion_matrix(classification,X_test, y_test) -- *to visualize matrix is plotted thanks to plot_confusion_matrix method, which it requires the same variables than before, as well as the variable of the classification.*  
+
+Also, to get more information about the model applied, it's possible to use a heatmap of the same confusion_matrix from before. So, to get this heatmap we follow the next sintax:  
+
+- cmx=confusion_matrix(y_test,y_test_pred) --*here we just assign the result of the confusion matrix method to a variable called cmx*
+- sns.heatmap(cmx/np.sum(cmx), annot=True, fmt='.2%', cmap='Blues'); --*here using the seaborn library, it permits to visualize a heatmap, with the heatmap method. Also we can define some parameters in order to visualize better the heatmap, as well as we can show the values in percentatge.*  
+
+Finally, we try to obtain the Receiver Operating Characteristic (ROC) Curve in order to......
+Here are the steps to visualize the ROC Curve:  
+
+- from sklearn.metrics import roc_auc_score, roc_curve --*here its the code to import the ROC algorithms from the sklearn.metrics library.*  
+- y_pred_probs=classification.predict_proba(X_test)[::,1] --**  
+- y_cat=pd.get_dummies(y, drop_first=True) --**  
+- X_train,X_test,y_train,y_test=train_test_split(X_full,y_cat,test_size=0.45,random_state=40) --**  
+- fpr,tpr, _ = roc_curve(y_test,y_pred_probs) --**  
+- auc=roc_auc_score(y_test,y_pred_probs) --**  
+- plt.plot(fpr,tpr,label='roc mode, auc='+str(auc)) --**  
+- plt.legend(loc=4) --**  
+- plt.show(); --**  
 
 **Tools**
  - *Code:* Jupyter Notebook - [Link to code folder](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Lab%20Imbalanced%20data.ipynb)
