@@ -27,7 +27,7 @@ The next project it will try to get answers about the information provided in th
    - Which location has the most opportunities?  
    - What skills, tools, degrees or majors do employers want the most for data scientists?  
 
-### Steps and methods applied
+### Steps and methods applied 
 
 Bear in mind, we've been researching in the the database, helped by the different tools provided by Python and Tableau. Next, we list the different steps we've been using from the database til the different representations of plots, map or pie charts:
 
