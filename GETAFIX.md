@@ -1,14 +1,12 @@
-![Ironhack](C:\Users\Sergi\OneDrive\Documents\GitHub\sergiguasch\labs\week4\Lab2\Ironhack.jpg)  
+# Ironhack Project - GETAFIX 
+## US Data Science hires in 2018
+
+by [Sergi Guasch](https://github.com/SergiGuasch/sergiguasch), [Agustin Carecelen](https://github.com/AgustinCarcelen) and [Lluis Badia](https://github.com/lluis90badia) - February 2021
 <br/><br/>
 
-# Ironhack Lab  
+## Analyzing the different job positions related to Data Science most in demand in the United States in 2018.
 
-## Imbalanced data
-
-by [Sergi Alvarez Guasch](https://github.com/SergiGuasch/sergiguasch)
-
-## Classification in order to predict the customer churn from a given dataframe.
-
+![GetafixIronhack](https://github.com/SergiGuasch/sergiguasch/blob/main/projects/getafix/GetafixIronhack.jpeg)
 
 ### Index
 -*Introduction*  
@@ -29,7 +27,7 @@ The next project it will try to get answers about the information provided in th
    - Which location has the most opportunities?  
    - What skills, tools, degrees or majors do employers want the most for data scientists?  
 
-### Steps and methods applied
+### Steps and methods applied 
 
 Bear in mind, we've been researching in the the database, helped by the different tools provided by Python and Tableau. Next, we list the different steps we've been using from the database til the different representations of plots, map or pie charts:
 
