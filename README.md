@@ -72,10 +72,14 @@ To get the confusion matrix its necessary to follow the next steps:
 - confusion_matrix(y_test,y_test_pred) -- *the confusion matrix method is applied to the the y_test obtained during the train test split equation, and the y_test predicted in the last steps about the classification. So we are using the same variables than in accuracy_score method*
 - plot_confusion_matrix(classification,X_test, y_test) -- *to visualize matrix is plotted thanks to plot_confusion_matrix method, which it requires the same variables than before, as well as the variable of the classification.*  
 
+![3](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/Confusion_Matrix.jpg)  
+
 Also, to get more information about the model applied, it's possible to use a heatmap of the same confusion_matrix from before. So, to get this heatmap we follow the next sintax:  
 
 - cmx=confusion_matrix(y_test,y_test_pred) --*here we just assign the result of the confusion matrix method to a variable called cmx*
 - sns.heatmap(cmx/np.sum(cmx), annot=True, fmt='.2%', cmap='Blues'); --*here using the seaborn library, it permits to visualize a heatmap, with the heatmap method. Also we can define some parameters in order to visualize better the heatmap, as well as we can show the values in percentatge.*  
+
+![4](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/Heatmap.jpg)  
 
 Finally, we try to obtain the Receiver Operating Characteristic (ROC) Curve in order to......
 Here are the steps to visualize the ROC Curve:  
@@ -89,6 +93,8 @@ Here are the steps to visualize the ROC Curve:
 - plt.plot(fpr,tpr,label='roc mode, auc='+str(auc)) --**  
 - plt.legend(loc=4) --**  
 - plt.show(); --**  
+
+![5](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/ROC_Curve.jpg)  
 
 ### Why in this dataset a simple model will give us more than 70% accuracy?   
 
