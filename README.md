@@ -1,11 +1,11 @@
 # Ironhack Lab  
 ## Imbalanced data
 
+![Ironhack](C:\Users\Sergi\OneDrive\Documents\GitHub\sergiguasch\labs\week4\Lab2\Ironhack.jpg)
 by [Sergi Alvarez Guasch](https://github.com/SergiGuasch/sergiguasch)
 
 ## Classification in order to predict the customer churn from a given dataframe.
 
-![GetafixIronhack](https://github.com/SergiGuasch/sergiguasch/blob/main/projects/getafix/GetafixIronhack.jpeg)
 
 ### Index
 -*Introduction*  
