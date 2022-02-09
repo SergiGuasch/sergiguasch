@@ -28,7 +28,7 @@ That's the result once imported:
 
  
 
-![2](https://github.com/SergiGuasch/sergiguasch/blob/main/projects/getafix/2.png) 
+![1](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/Load.jpg) 
 
 The next project it will try to get answers about the information provided in the database and required in the excercise statement:  
    - Who gets hired? What kind of talent do employers want when they are hiring a data scientist?  
