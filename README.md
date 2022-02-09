@@ -87,5 +87,11 @@ Here are the steps to visualize the ROC Curve:
 - plt.legend(loc=4) --**  
 - plt.show(); --**  
 
+### Why in this dataset a simple model will give us more than 70% accuracy?   
+
+### Synthetic Minority Oversampling TEchnique (SMOTE)  
+
+### Tomek links  
+
 **Tools**
  - *Code:* Jupyter Notebook - [Link to code folder](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Lab%20Imbalanced%20data.ipynb)
