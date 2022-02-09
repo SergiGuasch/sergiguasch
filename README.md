@@ -44,7 +44,17 @@ Following the metodology, it has been extracted the different independent variab
 - X_num=X.select_dtypes(include=np.number) -- *here we use the columns from the df which are numerical and we asigned to the variable X_num.*  
 - scaler= RobustScaler() -- *we asign the method to scale 'RobustScaler' to the variable scaler.*  
 - scaler.fit(X_num) -- *the fit method permits using scaler to scale over the variable X_num.*  
-- X_full= pd.DataFrame(scaler.transform(X_num),columns=X_num.columns) -- *finally we can asign to a new variable, the dataframe with the scaled variable X_num using the transform method.*   
+- X_full= pd.DataFrame(scaler.transform(X_num),columns=X_num.columns) -- *finally we can asign to a new variable, the dataframe with the scaled variable X_num using the transform method.*  
+
+### 5. Build the logistic regression model  
+To build the logistic model it has been used the next equation:   
+
+X_train,X_test,y_train,y_test=train_test_split(X_full,y,test_size=0.45,random_state=40)
+
+X_full and y are the independent and dependent variables respectively, which are the variable obtained in the last steps. Also, in the equation it has been assigned a random_state of 40 and a test_size of =.45, which are the standard values used to do the logistic regression model.  
+
+### 6. Evaluate the model  
+
 
 **Tools**
  - *Code:* Jupyter Notebook - [Link to code folder](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Lab%20Imbalanced%20data.ipynb)
