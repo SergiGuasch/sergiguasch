@@ -9,7 +9,7 @@ by [Sergi Alvarez Guasch](https://github.com/SergiGuasch/sergiguasch)
 
  1. **My own analysis** Jupyter Notebook - [Link to code folder](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab4/Lab%20Titanic%20approaches%20-%20feature%20engineering.ipynb)  
  
-Applying an Exploration Data Analysis in the Titanic database, it has been observed that 'sex' is the independent variable with the highest impact on survival rate. However, this idea it doesn't look so much to match with the real life, but it is what the analysis shows. To get that conclusion, it has been used the metodology specified in the jupyter notebook from above. 
+The database used for this activity it has been the train.csv. Applying an Exploration Data Analysis in the Titanic database, it has been observed that 'sex' is the independent variable with the highest impact on survival rate. However, this idea it doesn't look so much to match with the real life, but it is what the analysis shows. To get that conclusion, it has been used the metodology specified in the jupyter notebook from above. 
 
 The metodology use some features as Feature selection, features extraction/generation and feature engineering. In this sense, it has been applied different methods, as drop_duplicates to eliminate any row duplicate (no duplicates has appeared in this database), as well as the describe and info methods to explore the features of the dataframe. From here we've been realised there are some null values in some columns, as Age, Embarked or Cabin. So, to be able to apply a matrix correlation, we need to deal with this null values filling the numerical values with the median and the categorical with 'unknown'. However, we need to think which columns are going to be usful to do the analysis, this means that the rest of columns we can drop them all. So, bear in mind this, it has been dropped PassengerId, Name, Ticket, Fare, Cabin and Embarked. The reason to do that in each case are the next: 
 
@@ -32,15 +32,25 @@ As note, it is noticed that, due to it hasn't been used for this EDA any kind of
   
 - any feature engineering or feature wrangling methods which you have seen? 
 
+  
+
 
 
 - did they impute any missing values? 
 
 [khageshorgiri](https://www.kaggle.com/khageshorgiri/eda-to-classification-titanic-dataset)  
+
 The metodology used in this project, it shows that in case there are any missing entries, they impute them with appropriate values or drop them.  
+
 ![NullValues](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab4/NullValues.jpg)  
 
-- what about scaling methods for numerical variables?
+- what about scaling methods for numerical variables?  
+
+[masumrumi](https://www.kaggle.com/masumrumi/a-statistical-analysis-ml-workflow-of-titanic)  
+
+In this project it has been used the StandardScaler to feature the scale of his numerical dataset.  
+
+![Scaling](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab4/Scaling.jpg)  
 
 - what about encoding categorical variables?
 
