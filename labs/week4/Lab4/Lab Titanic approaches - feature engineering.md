@@ -7,7 +7,7 @@
 by [Sergi Alvarez Guasch](https://github.com/SergiGuasch/sergiguasch)  
 
 
- - **My own analysis** Jupyter Notebook - [Link to code folder](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab4/Lab%20Titanic%20approaches%20-%20feature%20engineering.ipynb)  
+ 1. **My own analysis** Jupyter Notebook - [Link to code folder](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab4/Lab%20Titanic%20approaches%20-%20feature%20engineering.ipynb)  
  
 Applying an Exploration Data Analysis in the Titanic database, it has been observed that 'sex' is the independent variable with the highest impact on survival rate. However, this idea it doesn't look so much to match with the real life, but it is what the analysis shows. To get that conclusion, it has been used the metodology specified in the jupyter notebook from above. 
 
@@ -22,7 +22,9 @@ The metodology use some features as Feature selection, features extraction/gener
 
 Another steps used in the metodology has been, for example, define as an integer the age, using the floor and astype methods. On the other hand, after check the sex variable, it has been decided to encode the column as numerical using an if/else. Finally, taking advantage of that all columns are numerical, it has been assigned to a new variable to permit display some histograms to display if there are any remarkable outlier. Also, checking again the describe method it seems there would be a possible outliers in the SibSp and Parch columns if we compare with the mean, but we don't need to drop them or deal with them cause are not typo, and although they may be unusual, they are perfectly real and possible values that deserve be analysed too. 
 
-Finally it has been applied the correlation matrix and the subsequent heatmap which it shows, as it describes at the begining of this summarize, that 'sex' is the independent variable observed with the highest impact on survival rate. Also, the PClass is the second highest value on survival rate which looks like to have more sense with the real life during the Titanic lifetime. 
+Finally, it has been applied the correlation matrix and the subsequent heatmap which it shows, as it describes at the begining of this summarize, that 'sex' is the independent variable observed with the highest impact on survival rate. Also, the PClass is the second highest value on survival rate which looks like to have more sense with the real life during the Titanic lifetime.
+
+![Matrix_Correlation_Heatmap](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab4/Corr.jpg)
 
 As note, it is noticed that, due to it hasn't been used for this EDA any kind of model supervised (logistic regression, smote, etc.), it has not been necessaru to do the train-test-split, so it hasn't been split the data between the independent and the dependent variable. In case to apply the model, it would be necessary to apply as a target variable the column 'Survived'.
 
