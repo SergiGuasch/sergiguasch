@@ -15,9 +15,15 @@ The metodology use some features as Feature selection, features extraction/gener
 
  - PassengerId: in general, the id columns of each dataframe are not useful to make analysis.
  - Name: it's so specific, so each row it will have a different name and it's not useful as a categorical column to analyze the impact on a survival rate.  
- - Ticket: as well as the name it's so specific and not useful as a categorical column to analyze the impact on a survival rate.    
+ - Ticket: as it happens in the name, it's so specific and not useful as a categorical column to analyze the impact on a survival rate.    
  - Fare: that column it has been considered as a variable with multicollinearity due to its is highly correlated with Pclass.  
  - Cabin: after check the high number of null values presents in that column it has been considered a useless column for the analysis.  
  - Embarked: it has been considered that to know the location where the passengers embarked is not relevant to analyze the impact on a survival rate.  
 
-Another steps used in the metodology has been, for example, define as an integer the age, using the floor and astype methods. On the other hand, after check the sex variable, it has been decided to encode the column as numerical using an if/else. Finally, taking advantage of that all columns are numerical, it has been assigned to a new variable to permit display some histograms to display if there are any remarkable outlier. Also, checking again the describe method it seems there would be a possible outliers in the SibSp and Parch columns if we compare with the mean, but we don't need to drop them or deal with them cause are not typo, and although they may be unusual, they are perfectly real and possible values that deserve be analysed too.
+Another steps used in the metodology has been, for example, define as an integer the age, using the floor and astype methods. On the other hand, after check the sex variable, it has been decided to encode the column as numerical using an if/else. Finally, taking advantage of that all columns are numerical, it has been assigned to a new variable to permit display some histograms to display if there are any remarkable outlier. Also, checking again the describe method it seems there would be a possible outliers in the SibSp and Parch columns if we compare with the mean, but we don't need to drop them or deal with them cause are not typo, and although they may be unusual, they are perfectly real and possible values that deserve be analysed too. 
+
+Finally it has been applied the correlation matrix and the subsequent heatmap which it shows, as it describes at the begining of this summarize, that 'sex' is the independent variable observed with the highest impact on survival rate. Also, the PClass is the second highest value on survival rate which looks like to have more sense with the real life during the Titanic lifetime. 
+
+As note, it is noticed that, due to it hasn't been used for this EDA any kind of model supervised (logistic regression, smote, etc.), it has not been necessaru to do the train-test-split, so it hasn't been split the data between the independent and the dependent variable. In case to apply the model, it would be necessary to apply as a target variable the column 'Survived'.
+
+
