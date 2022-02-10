@@ -26,6 +26,18 @@ Finally, it has been applied the correlation matrix and the subsequent heatmap w
 
 ![Matrix_Correlation_Heatmap](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab4/Corr.jpg)
 
-As note, it is noticed that, due to it hasn't been used for this EDA any kind of model supervised (logistic regression, smote, etc.), it has not been necessaru to do the train-test-split, so it hasn't been split the data between the independent and the dependent variable. In case to apply the model, it would be necessary to apply as a target variable the column 'Survived'.
+As note, it is noticed that, due to it hasn't been used for this EDA any kind of model supervised (logistic regression, smote, etc.), it has not been necessaru to do the train-test-split, so it hasn't been split the data between the independent and the dependent variable. In case to apply the model, it would be necessary to apply as a target variable the column 'Survived'.  
+
+2. **Review a random samples of 5 notebooks:**  
+  
+- any feature engineering or feature wrangling methods which you have seen? 
+
+- did they impute any missing values? 
+
+- what about scaling methods for numerical variables?
+
+- what about encoding categorical variables?
+
+- any evidence of overfit or sampling bias ? 
 
 
