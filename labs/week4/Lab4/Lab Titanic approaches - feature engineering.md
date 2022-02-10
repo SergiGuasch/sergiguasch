@@ -32,7 +32,13 @@ As note, it is noticed that, due to it hasn't been used for this EDA any kind of
   
 - any feature engineering or feature wrangling methods which you have seen? 
 
+
+
 - did they impute any missing values? 
+
+[khageshorgiri](https://www.kaggle.com/khageshorgiri/eda-to-classification-titanic-dataset)  
+The metodology used in this project, it shows that in case there are any missing entries, they impute them with appropriate values or drop them.  
+![NullValues](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab4/NullValues.jpg)  
 
 - what about scaling methods for numerical variables?
 
