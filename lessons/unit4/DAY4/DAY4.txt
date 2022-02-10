@@ -1,0 +1,5 @@
+Feature selection is more about matrix confusion, scatter plots histograms, null values, chi square, heatmaps...
+features extraction/generation extracting useful information from existing available information. Example: Not interested in a birth date, but yes in the age.
+feature engineering transforming something usable that is easier to interpret. Example, scaling, cleaning categorical columns, use regular e`ressions
+
+max_depth() parameter to set the maximum level to apply the decision tree as a supervised classification machine learning
