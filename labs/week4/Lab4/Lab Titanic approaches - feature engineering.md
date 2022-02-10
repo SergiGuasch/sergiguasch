@@ -52,7 +52,7 @@ The metodology used in this project, it shows that in case there are any missing
 
 In this project it has been used the StandardScaler to feature the scale of his numerical dataset.  
 
-![Scaling](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab4/Scaling.jpg)    
+![Scaling](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab4/Scaling.jpg)     
 
 - what about encoding categorical variables?
 
