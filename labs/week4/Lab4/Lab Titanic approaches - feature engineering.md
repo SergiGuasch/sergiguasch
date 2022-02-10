@@ -1,0 +1,10 @@
+![Ironhack](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Ironhack.jpg)  
+
+# Unit 4 Lab 4 
+
+## Lab Titanic approaches - feature engineering
+
+by [Sergi Alvarez Guasch](https://github.com/SergiGuasch/sergiguasch)  
+
+
+ - **Code:** Jupyter Notebook - [Link to code folder](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Lab%20Imbalanced%20data.ipynb)
