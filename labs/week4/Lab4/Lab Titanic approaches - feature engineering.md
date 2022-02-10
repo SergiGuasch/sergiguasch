@@ -30,11 +30,13 @@ As note, it is noticed that, due to it hasn't been used for this EDA any kind of
 
 2. **Review a random samples of 5 notebooks:**  
   
-- any feature engineering or feature wrangling methods which you have seen? 
+- any feature engineering or feature wrangling methods which you have seen?  
 
-  
+[ramontanoeiro](https://www.kaggle.com/ramontanoeiro/titanic-competition)  
 
+In this project it's converting categorical features into numerical for better analysis.
 
+![Engineering](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab4/Engineering.jpg)    
 
 - did they impute any missing values? 
 
