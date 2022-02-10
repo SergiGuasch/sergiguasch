@@ -81,7 +81,7 @@ Also, to get more information about the model applied, it's possible to use a he
 
 ![4](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/Heatmap.jpg)  
 
-Finally, we try to obtain the Receiver Operating Characteristic (ROC) Curve in order to......
+Finally, we try to obtain the Receiver Operating Characteristic (ROC) Curve in order to know how good is the model implemented. If the line is closer to the perfection (90 degrees, in the axis of the plot), then means that the model is good.   
 Here are the steps to visualize the ROC Curve:  
 
 - from sklearn.metrics import roc_auc_score, roc_curve --*here its the code to import the ROC algorithms from the sklearn.metrics library.*  
