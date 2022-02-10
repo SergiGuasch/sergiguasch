@@ -62,6 +62,10 @@ In this project the categories in a categorical variable have been converted int
 
 ![Encoding](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab4/Encoding.jpg)  
 
-- any evidence of overfit or sampling bias ? 
+- any evidence of overfit or sampling bias ?  
 
+[sisharaneranjana](https://www.kaggle.com/sisharaneranjana/titanic-complete-guide-ml-dl-models)  
 
+In this project it has been used the SMOTE to resample the dataset. This oversampling technique is used for the imbalanced classification.
+
+![Smote](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab4/smote.jpg)  
