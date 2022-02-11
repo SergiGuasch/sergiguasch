@@ -55,7 +55,7 @@ To build the logistic model it has been used the next equation, the train test s
 
 X_train,X_test,y_train,y_test=train_test_split(X_full,y,test_size=0.45,random_state=40)
 
-X_full and y are the independent and dependent variables respectively, which are the variable obtained in the last steps. Also, in the equation it has been assigned a random_state of 40 and a test_size of =.45, which are the standard values used to do the logistic regression model.  
+X_full and y are the independent and dependent variables respectively, which are the variable obtained in the last steps. Also, in the equation it has been assigned a random_state of 40 and a test_size of =.45, which are the standard values used to do the logistic regression model. Also it is important to bear in mind that in a logistic regression the dependent variable y it is not necessary to encode it as a number to use it for train-test.
 
 ### 6. Evaluate the model  
 To evaluate the model, first of all we are going to check the accuracy score of the result of the train test split. SO the mtodology to get this accuracy value is shown here:  
@@ -65,7 +65,7 @@ To evaluate the model, first of all we are going to check the accuracy score of 
 - y_test_pred=classification.predict(X_test) -- *the next step is use through the predict() method applied to the independent variable text X_test (which it has been got it during the train test split). The result is going to be the predicted y_test*
 - accuracy_score(y_test,y_test_pred) -- *finally using the accuracy_score() between the y_test obtained during the train test split equation, and the y_test predicted before, we can get an score number.*  
 
-Another step to visualize the model is using a confusion matrix. This matrix is useful in order to........  
+Another step to visualize the model is using a confusion matrix. This matrix is useful in order to get a better idea if the classification model is getting right and what types of errors it is making.    
 To get the confusion matrix its necessary to follow the next steps: 
 
 - from sklearn.metrics import confusion_matrix, plot_confusion_matrix -- *here its the code to import the confusion matrix algorithms from the sklearn.metrics library.*
@@ -85,20 +85,37 @@ Finally, we try to obtain the Receiver Operating Characteristic (ROC) Curve in o
 Here are the steps to visualize the ROC Curve:  
 
 - from sklearn.metrics import roc_auc_score, roc_curve --*here its the code to import the ROC algorithms from the sklearn.metrics library.*  
-- y_pred_probs=classification.predict_proba(X_test)[::,1] --**  
-- y_cat=pd.get_dummies(y, drop_first=True) --**  
-- X_train,X_test,y_train,y_test=train_test_split(X_full,y_cat,test_size=0.45,random_state=40) --**  
-- fpr,tpr, _ = roc_curve(y_test,y_pred_probs) --**  
-- auc=roc_auc_score(y_test,y_pred_probs) --**  
-- plt.plot(fpr,tpr,label='roc mode, auc='+str(auc)) --**  
-- plt.legend(loc=4) --**  
-- plt.show(); --**  
+- y_pred_probs=classification.predict_proba(X_test)[::,1] --*we assign to the y prediction the probability using predict_proba method which it gives you the probability for the target*  
+- y_cat=pd.get_dummies(y, drop_first=True) --*to use the roc_curve in the next steps, here it is necessary to encode into numbers the target variable using the get_dummies method*  
+- X_train,X_test,y_train,y_test=train_test_split(X_full,y_cat,test_size=0.45,random_state=40) --*and its also necessary to get the new y_test using the train test split equation again, but now with the y encoded*
+- fpr,tpr, _ = roc_curve(y_test,y_pred_probs) --*Once we know the probability (two steps before), we can use it with the y_test and apply it into the roc_curve method* 
+- auc=roc_auc_score(y_test,y_pred_probs) --*Also, we can obtain the score of the Area Under the Curve applying the roc_auc_score method*  
+- plt.plot(fpr,tpr,label='roc mode, auc='+str(auc)) --*here the last results are plotted into a graph*  
+- plt.legend(loc=4) --*add a legend*  
+- plt.show(); --*shows the plot*  
 
 ![5](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/ROC_Curve.jpg)  
 
-### Why in this dataset a simple model will give us more than 70% accuracy?   
+### Why in this dataset a simple model will give us more than 70% accuracy?  
 
-### Synthetic Minority Oversampling TEchnique (SMOTE)  
+Cause as we can see in the sample of the dataset, the target variable has just 1869 Churn, while the no Churn are 5174. That means that the model can predict most of the times no Churn, but taking into account just this, there's a lack of information, cause the target is to predict the churn cases. So the data accuracy by itself it is not enough.  
+
+------  
+
+Once the model it has been evaluated we can use some techniques of resampling data:
+
+### Synthetic Minority Oversampling Technique (SMOTE)
+
+SMOTE is an oversampling technique used for the imbalanced classification. In this scenario the results of the accuracy_score, confusion_matrix and the ROC Curve became worse than the results of evaluate the model without any resampling technique.
+
+![6](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/ROC_Curve.jpg)  
+![7](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/ROC_Curve.jpg)  
+![8](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/ROC_Curve.jpg)  
 
 ### Tomek links  
 
+Tomek links is an undersampling technique used for the imbalanced classification. This model identify pairs of nearest neighbors in a dataset that have different classes. In this scenario there is a minimal improvment about 0,1% compares with the Logistic Regression classification non resampled. 
+
+![9](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/ROC_Curve.jpg)  
+![10](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/ROC_Curve.jpg)  
+![11](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/ROC_Curve.jpg)  
