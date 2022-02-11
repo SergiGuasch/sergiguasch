@@ -102,12 +102,20 @@ Cause as we can see in the sample of the dataset, the target variable has just 1
 
 ------  
 
-Once the model it has been evaluated we can use some techniques of resampling data
+Once the model it has been evaluated we can use some techniques of resampling data:
 
 ### Synthetic Minority Oversampling Technique (SMOTE)
 
 SMOTE is an oversampling technique used for the imbalanced classification. In this scenario the results of the accuracy_score, confusion_matrix and the ROC Curve became worse than the results of evaluate the model without any resampling technique.
 
+![6](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/ROC_Curve.jpg)  
+![7](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/ROC_Curve.jpg)  
+![8](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/ROC_Curve.jpg)  
+
 ### Tomek links  
 
 Tomek links is an undersampling technique used for the imbalanced classification. This model identify pairs of nearest neighbors in a dataset that have different classes. In this scenario there is a minimal improvment about 0,1% compares with the Logistic Regression classification non resampled. 
+
+![9](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/ROC_Curve.jpg)  
+![10](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/ROC_Curve.jpg)  
+![11](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/ROC_Curve.jpg)  
