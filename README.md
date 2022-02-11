@@ -85,7 +85,7 @@ Finally, we try to obtain the Receiver Operating Characteristic (ROC) Curve in o
 Here are the steps to visualize the ROC Curve:  
 
 - from sklearn.metrics import roc_auc_score, roc_curve --*here its the code to import the ROC algorithms from the sklearn.metrics library.*  
-- y_pred_probs=classification.predict_proba(X_test)[::,1] --**  
+- y_pred_probs=classification.predict_proba(X_test)[::,1] --*here we assign to the y prediction the probability using predict_proba method which it gives you the probability fro the target*  
 - y_cat=pd.get_dummies(y, drop_first=True) --**  
 - X_train,X_test,y_train,y_test=train_test_split(X_full,y_cat,test_size=0.45,random_state=40) --**  
 - fpr,tpr, _ = roc_curve(y_test,y_pred_probs) --**  
