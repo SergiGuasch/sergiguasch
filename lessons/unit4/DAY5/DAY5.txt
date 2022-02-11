@@ -1,0 +1,7 @@
+Define K is important to predict with the model KNN. We need to know the distance to between neighboors.
+Also the number of neighboors really matters, not just the distance.
+MinMaxScaler, StandarScaler.. Normalizer its usually the best method to aplly to KNN
+KNN is very sensitive to outliers.
+It's a great option to fillnig missing values.
+accuracy
+Best approach to the outliers is remove them 
