@@ -86,7 +86,9 @@ Here are the steps to visualize the ROC Curve:
 
 - from sklearn.metrics import roc_auc_score, roc_curve --*here its the code to import the ROC algorithms from the sklearn.metrics library.*  
 - y_pred_probs=classification.predict_proba(X_test)[::,1] --*we assign to the y prediction the probability using predict_proba method which it gives you the probability for the target*  
-- fpr,tpr, _ = roc_curve(y_test,y_pred_probs) --*Once we know the probability, we can used with the y_test obtained during the train test split equation into the roc_curve method* 
+- y_cat=pd.get_dummies(y, drop_first=True) --*to use the roc_curve in the next steps, here it is necessary to encode into numbers the target variable using the get_dummies method*  
+- X_train,X_test,y_train,y_test=train_test_split(X_full,y_cat,test_size=0.45,random_state=40) --*and its also necessary to get the new y_test using the train test split equation again, but now with the y encoded*
+- fpr,tpr, _ = roc_curve(y_test,y_pred_probs) --*Once we know the probability (two steps before), we can use it with the y_test and apply it into the roc_curve method* 
 - auc=roc_auc_score(y_test,y_pred_probs) --*Also, we can obtain the score of the Area Under the Curve applying the roc_auc_score method*  
 - plt.plot(fpr,tpr,label='roc mode, auc='+str(auc)) --*here the last results are plotted into a graph*  
 - plt.legend(loc=4) --*add a legend*  
