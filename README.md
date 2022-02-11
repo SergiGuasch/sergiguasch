@@ -65,7 +65,7 @@ To evaluate the model, first of all we are going to check the accuracy score of 
 - y_test_pred=classification.predict(X_test) -- *the next step is use through the predict() method applied to the independent variable text X_test (which it has been got it during the train test split). The result is going to be the predicted y_test*
 - accuracy_score(y_test,y_test_pred) -- *finally using the accuracy_score() between the y_test obtained during the train test split equation, and the y_test predicted before, we can get an score number.*  
 
-Another step to visualize the model is using a confusion matrix. This matrix is useful in order to........  
+Another step to visualize the model is using a confusion matrix. This matrix is useful in order to get a better idea if the classification model is getting right and what types of errors it is making.    
 To get the confusion matrix its necessary to follow the next steps: 
 
 - from sklearn.metrics import confusion_matrix, plot_confusion_matrix -- *here its the code to import the confusion matrix algorithms from the sklearn.metrics library.*
