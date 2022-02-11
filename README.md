@@ -55,7 +55,7 @@ To build the logistic model it has been used the next equation, the train test s
 
 X_train,X_test,y_train,y_test=train_test_split(X_full,y,test_size=0.45,random_state=40)
 
-X_full and y are the independent and dependent variables respectively, which are the variable obtained in the last steps. Also, in the equation it has been assigned a random_state of 40 and a test_size of =.45, which are the standard values used to do the logistic regression model.  
+X_full and y are the independent and dependent variables respectively, which are the variable obtained in the last steps. Also, in the equation it has been assigned a random_state of 40 and a test_size of =.45, which are the standard values used to do the logistic regression model. Also it is important to bear in mind that in a logistic regression the dependent variable y it is not necessary to encode it as a number to use it for train-test.
 
 ### 6. Evaluate the model  
 To evaluate the model, first of all we are going to check the accuracy score of the result of the train test split. SO the mtodology to get this accuracy value is shown here:  
@@ -85,14 +85,12 @@ Finally, we try to obtain the Receiver Operating Characteristic (ROC) Curve in o
 Here are the steps to visualize the ROC Curve:  
 
 - from sklearn.metrics import roc_auc_score, roc_curve --*here its the code to import the ROC algorithms from the sklearn.metrics library.*  
-- y_pred_probs=classification.predict_proba(X_test)[::,1] --*we assign to the y prediction the probability using predict_proba method which it gives you the probability fro the target*  
-- y_cat=pd.get_dummies(y, drop_first=True) --*with the get_dummies method, we encode the categorical data to use as a values for the train test model*  
-- X_train,X_test,y_train,y_test=train_test_split(X_full,y_cat,test_size=0.45,random_state=40) --*here, as we did before, we make the train test split but now the dependent variable is *  
-- fpr,tpr, _ = roc_curve(y_test,y_pred_probs) --**  
-- auc=roc_auc_score(y_test,y_pred_probs) --**  
-- plt.plot(fpr,tpr,label='roc mode, auc='+str(auc)) --**  
-- plt.legend(loc=4) --**  
-- plt.show(); --**  
+- y_pred_probs=classification.predict_proba(X_test)[::,1] --*we assign to the y prediction the probability using predict_proba method which it gives you the probability for the target*  
+- fpr,tpr, _ = roc_curve(y_test,y_pred_probs) --*Once we know the probability, we can used with the y_test obtained during the train test split equation into the roc_curve method* 
+- auc=roc_auc_score(y_test,y_pred_probs) --*Also, we can obtain the score of the Area Under the Curve applying the roc_auc_score method*  
+- plt.plot(fpr,tpr,label='roc mode, auc='+str(auc)) --*here the last results are plotted into a graph*  
+- plt.legend(loc=4) --*add a legend*  
+- plt.show(); --*shows the plot*  
 
 ![5](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Images/ROC_Curve.jpg)  
 
