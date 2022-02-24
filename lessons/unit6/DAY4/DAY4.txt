@@ -1,0 +1,1 @@
+ANOVA is telling you if there is or not a difference between the different variables. 3 or more variables.
