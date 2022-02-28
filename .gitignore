@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+lessons/unit6/DAY5/instacart-market-basket-analysis/orders.csv/__MACOSX/._orders.csv
+lessons/unit6/DAY5/instacart-market-basket-analysis/products.csv/products.csv
+lessons/unit6/DAY5/instacart-market-basket-analysis/products.csv/__MACOSX/._products.csv
+lessons/unit6/DAY5/instacart-market-basket-analysis/orders.csv/orders.csv
+lessons/unit6/DAY5/instacart-market-basket-analysis/order_products__train.csv/order_products__train.csv
+lessons/unit6/DAY5/instacart-market-basket-analysis/order_products__train.csv/__MACOSX/._order_products__train.csv
+lessons/unit6/DAY5/instacart-market-basket-analysis/order_products__prior.csv/__MACOSX/._order_products__prior.csv
