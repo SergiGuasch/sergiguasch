@@ -1,0 +1,5 @@
+Unsupervised K Means, the K is the number of clusters, the members of groups. Is something that is undefine
+how similar the clusters are inside and how difference are outside the cluster. Never reset index in the clustering model. Never drop rows.
+Always keep Index
+
+Supervised KNN, the K is the number of neighboorhoors
