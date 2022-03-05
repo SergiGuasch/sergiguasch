@@ -1,7 +1,7 @@
 # Ironhack Project - GETAFIX 
 ## US Data Science hires in 2018
 
-by [Sergi Guasch](https://github.com/SergiGuasch/sergiguasch), [Agustin Carecelen](https://github.com/AgustinCarcelen) and [Lluis Badia](https://github.com/lluis90badia) - February 2021
+by [Sergi Guasch](https://github.com/SergiGuasch/sergiguasch), [Agustin Carecelen](https://github.com/AgustinCarcelen) and [Lluis Badia](https://github.com/lluis90badia) - February 2022
 <br/><br/>
 
 ## Analyzing the different job positions related to Data Science most in demand in the United States in 2018.
