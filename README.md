@@ -1,5 +1,3 @@
-![Ironhack2](https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/48626085)
-
 ![Ironhack](https://github.com/SergiGuasch/sergiguasch/blob/main/labs/week4/Lab2/Ironhack.jpg)  
 
 # A beautiful Readme! 
