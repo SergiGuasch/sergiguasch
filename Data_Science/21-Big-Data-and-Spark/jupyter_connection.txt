@@ -1,0 +1,114 @@
+If you are struggling in PySpark setup then please follow below-mentioned code word by word:
+
+
+
+I have checked with various versions of python and Spark compatibility and the one which worked for me is 2020.02 (Feb 2020) version (Else I was getting Numpy errors and few other errors while running code in Jupyter Notebook)
+
+First, you needed to clean everything from your virtual machine, by running this command:
+
+$ rm -rfv / home/ubuntu /{*,.*}
+
+Getting Anaconda:
+
+$ wget http://repo.continuum.io/archive/Anaconda3-2020.02-Linux-x86_64.sh
+
+$ bash Anaconda3-2020.02-Linux-x86_64.sh
+
+then run:
+
+$ source ~/.bashrc
+
+This will change your environment to Conda's (Base)
+
+(base) ubuntu@ip-172-31-16-113
+
+now we will install everything in this environment only:
+
+
+
+let's check the version of Python:
+
+$ which python
+
+/home/ubuntu/anaconda3/bin/python
+
+$ python --version
+
+it will give you -- Python 3.7.6
+
+Now run below codes for configuration of Jupyter Notebook and connection with EC2
+
+$ jupyter notebook --generate-config
+
+$ mkdir certs
+
+$ cd certs
+
+$ sudo openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mycert.pem -out mycert.pem
+
+$ sudo chmod 777 mycert.pem
+
+$ cd ~/.jupyter/
+
+$ vi jupyter_notebook_config.py
+
+press "i" and the paste this in file:
+
+# Configuration file for jupyter-notebook.
+
+c = get_config()
+
+# Notebook config this is where you saved your pem cert
+
+c.NotebookApp.certfile = u'/home/ubuntu/certs/mycert.pem'
+
+# Listen on all IPs
+
+c.NotebookApp.ip = '0.0.0.0'
+
+# Allow all origins
+
+c.NotebookApp.allow_origin = '*'
+
+# Do not open browser by default
+
+c.NotebookApp.open_browser = False
+
+# Fix port to 8888
+
+c.NotebookApp.port = 8888
+
+--  now press escape and then :wq!
+
+Now come out to main home directory and run jupyter Notebook command:
+
+$ cd
+
+$ jupyter notebook
+
+
+FOLLOW STEPS TO INSTALL JAVA AND SCALA 
+https://medium.com/@josemarcialportilla/getting-spark-python-and-jupyter-notebook-running-on-amazon-ec2-dec599e1c297 
+
+but select version 8 JAVA:
+sudo apt-get purge openjdk
+sudo apt-get install openjdk-8-jdk
+sudo update-alternatives --config java
+
+
+select next version of SPARK:
+wget https://archive.apache.org/dist/spark/spark-2.4.4/spark-2.4.4-bin-hadoop2.7.tgz
+sudo tar -zxvf spark-2.4.4-bin-hadoop2.7.tgz
+export SPARK_HOME='/home/ubuntu/spark-2.4.4-bin-hadoop2.7'
+export PATH=$SPARK_HOME:$PATH
+export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH
+
+
+if I have installed old version of spark, use this code:
+
+sudo rm -r /home/ubuntu/spark-2.0.0-bin-hadoop2.7
+
+sudo tar -zxvf spark-2.4.4-bin-hadoop2.7.tgz
+export SPARK_HOME='/home/ubuntu/spark-2.4.4-bin-hadoop2.7'
+export PATH=$SPARK_HOME:$PATH
+export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH

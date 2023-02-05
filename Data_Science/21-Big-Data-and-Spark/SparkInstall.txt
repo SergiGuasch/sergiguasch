@@ -1,0 +1,5 @@
+https://www.crayondata.com/guide-to-install-spark-and-use-pyspark-from-jupyter-in-windows/
+
+setx SPARK_HOME C:\Users\Sergi\Desktop\Data_Science\21-Big-Data-and-Spark\spark-3.2.3-bin-hadoop2.7
+setx HADOOP_HOME C:\Users\Sergi\Desktop\Data_Science\21-Big-Data-and-Spark\spark-3.2.3-bin-hadoop2.7
+setx PATH "%SPARK_HOME%;C:\Users\Sergi\Desktop\Data_Science\21-Big-Data-and-Spark\spark-3.2.3-bin-hadoop2.7
