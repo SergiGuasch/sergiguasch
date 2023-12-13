@@ -1,5 +1,0 @@
-<RCC>
-    <qresource prefix="/plugins/mid_point" >
-        <file>icon.png</file>
-    </qresource>
-</RCC>
